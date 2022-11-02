@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: #fafafa;
+}
+
+main .Hero {
+  display: flex;
+  height: 60vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+main .Hero .hero_text {
+  margin-top: 40%;
+}
+main .Hero .hero_text h1 {
+  font-weight: bold;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+main .Hero .hero_text p {
+  font-size: 1.4em;
+}
+main .Hero .hero_image img {
+  position: absolute;
+  right: -40vw;
+}
+@media screen and (min-width: 526px) {
+  main .Hero {
+    height: 65vh;
+    width: 100vw;
+    position: relative;
+    align-items: center;
+  }
+  main .Hero .hero_text {
+    margin-top: unset;
+  }
+  main .Hero .hero_text h1 {
+    font-size: 4.9em;
+  }
+  main .Hero .hero_image img {
+    position: absolute;
+    right: -9vw;
+    top: 5vh;
+  }
+}
+@media screen and (min-width: 726px) {
+  main .Hero {
+    height: 70vh;
+  }
+  main .Hero .hero_text h1 {
+    display: flex;
+    gap: 0.3em;
+    font-size: 7em;
+  }
+  main .Hero .hero_image img {
+    right: 9vw;
+  }
+}
+main .Bio h1 {
+  text-align: center;
+}
+main .Music .videos_wrapper .video iframe {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .Music h1 {
+  text-align: center;
+}
+@media screen and (min-width: 726px) {
+  main .Music .videos_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  main .Music .videos_wrapper .video {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+  main .Music .videos_wrapper .video iframe {
+    width: 90%;
+  }
+}
+main .Contact .contacts ul {
+  list-style: none;
+}
+main .Contact .contacts ul li {
+  margin: 4px;
+  padding: 5px;
+}
+main .Contact .contacts ul li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 32px;
+  background: #fafafa;
+}
+@media screen and (min-width: 726px) {
+  main .Contact .contacts ul {
+    display: flex;
+  }
+}
+main .Footer {
+  text-align: center;
+  border-top: 1px solid rgb(136, 136, 136);
+}/*# sourceMappingURL=styles.css.map */

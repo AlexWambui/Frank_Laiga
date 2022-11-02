@@ -1,0 +1,144 @@
+$background_color: black;
+$color: #fafafa;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: $background_color;
+    color: $color;
+}
+main{
+    .Hero{
+        // border: 1px solid yellow;
+        display: flex;
+        height: 60vh;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+        .hero_text{
+            margin-top: 40%;
+            h1{
+                font-weight: bold;
+                font-size: 4em;
+                text-transform: uppercase;                
+            }
+            p{
+                font-size: 1.4em;
+            }
+        }
+        .hero_image{
+            img{
+                position: absolute;
+                right: -40vw;
+            }        
+        }
+    }
+    @media screen and (min-width: 526px){
+        .Hero{
+            height: 65vh;
+            width: 100vw;
+            position: relative;
+            align-items: center;
+            .hero_text{
+                margin-top: unset;
+                h1{
+                    font-size: 4.9em;                    
+                }
+            }
+            .hero_image{
+                img{
+                    position: absolute;
+                    right: -9vw;
+                    top: 5vh;
+                }        
+            }
+        }
+    }
+    @media screen and (min-width: 726px){
+        .Hero{
+            height: 70vh;
+            .hero_text{
+                h1{
+                    display: flex;
+                    gap: 0.3em;
+                    font-size: 7em;
+                }
+            }
+            .hero_image{
+                img{
+                    right: 9vw;
+                }
+            }
+        }
+    }
+
+    .Bio{
+        h1{
+            text-align: center;
+        }
+    }
+
+    .Music{ 
+        .videos_wrapper{
+            .video{
+                iframe{
+                    width: fit-content;
+                }
+            }
+        }
+        h1{
+            text-align: center;
+        }
+        @media screen and (min-width: 726px){            
+            .videos_wrapper{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                .video{
+                    text-align: center;
+                    height: 100%;
+                    width: 100%;
+                    iframe{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    .Contact{
+        .contacts{
+            ul{
+                list-style: none;
+                li{
+                    margin: 4px;
+                    padding: 5px;
+                    a{
+                        color: #000;
+                        font-weight: bold;
+                        text-decoration: none;
+                        border: none;
+                        border-radius: 16px;
+                        padding: 8px 32px;
+                        background: #fafafa;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 726px){
+            .contacts{
+                ul{
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .Footer{
+        text-align: center;
+        border-top: 1px solid rgb(136, 136, 136);
+    }
+}
